@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><%= title %></title>
+    <title>火秀tv艺人自主上传系统</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="webkit|ie-comp|ie-stand" name="renderer">
@@ -11,17 +11,42 @@
           content="51tv，火秀tv，素人，无名艺人，素人艺术家，素人演唱会，素人乐队，素人秀，生活秀，4K，VR，VR直播，全民直播，全景直播，现场实况，演唱会，直播，娱乐，时尚，表演，才艺，生活，音乐，互动">
     <meta name="description"
           content="火秀tv - 素人演唱会直播，为素人艺术家实现举办个人演唱会梦想而存在。专业级策划，专业级舞台，专业级幕后，专业级舞美，专业级灯光，专业级音响，专业级舞团。全网超清直播，4K.VR全景直播双路实时放送。100%观众投票决胜负。">
-    <link href="../css/uploadCommon.css" type="text/css" rel="stylesheet"/>
-    <link href="../css/login.css" type="text/css" rel="stylesheet"/>
-    <script type="text/javascript" src="../js/lib/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="../js/uploadCommon.js"></script>
-    <script type="text/javascript" src="../js/cookie.js"></script>
+    <link href="../public/css/uploadCommon.css" type="text/css" rel="stylesheet"/>
+    <link href="../public/css/login.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="../public/js/lib/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../public/js/uploadCommon.js"></script>
+    <script type="text/javascript" src="../../skin/51tvVR/js/cookie.js"></script>
     <script>
 
     </script>
 </head>
 <body>
-<% include header.ejs %>
+<div class="header">
+    <div class="center">
+        <div class="logo"></div>
+        <!--已登录样式-->
+        <div class="userBK login">
+            <div class="face">
+                <img src="../imgs/default.png" alt="头像">
+            </div>
+            <div class="nickname">汪苏泷经纪人</div>
+            <div class="actions">
+                <a href="#exitLogin" class="exitLogin">[退出]</a>
+            </div>
+        </div>
+        <div class="userBK unlogin" style="display: none">
+            <div class="face">
+                <img src="../imgs/default.png" alt="头像">
+            </div>
+            <div class="nickname">汪苏泷经纪人</div>
+            <div class="actions">
+                <a href="#toLogin" class="exitLogin">[登录]</a>
+                <a href="#toRegister" class="exitLogin">[注册]</a>
+            </div>
+        </div>
+    </div>
+
+</div>
 <div class="page center">
     <div class="loginBK block">
         <div class="title" title="登录"></div>

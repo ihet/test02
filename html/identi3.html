@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>火秀tv艺人自主上传系统</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="webkit|ie-comp|ie-stand" name="renderer">
+    <meta name="robots" content="nofollow">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9" />
+    <meta name="keywords"
+          content="51tv，火秀tv，素人，无名艺人，素人艺术家，素人演唱会，素人乐队，素人秀，生活秀，4K，VR，VR直播，全民直播，全景直播，现场实况，演唱会，直播，娱乐，时尚，表演，才艺，生活，音乐，互动">
+    <meta name="description"
+          content="火秀tv - 素人演唱会直播，为素人艺术家实现举办个人演唱会梦想而存在。专业级策划，专业级舞台，专业级幕后，专业级舞美，专业级灯光，专业级音响，专业级舞团。全网超清直播，4K.VR全景直播双路实时放送。100%观众投票决胜负。">
+    <link href="../css/uploadCommon.css" type="text/css" rel="stylesheet"/>
+    <link href="../css/identi3.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="../js/lib/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function(){
+            $(".headNav li:first").addClass("style");
+            $(".dataCon .data:not(:first)").hide();
+            $(".headNav li").click(function(){
+                $(this).addClass("style").siblings("li").removeClass("style");
+                var indexs=$(this).index();
+                $(".dataCon .data").eq(indexs).show().siblings().hide();
+            })
+            /*j = jQuery.noConflict();
+            j(".headNav li:first").addClass("style");
+            j(".dataCon .data:not(:first)").hide();
+            j(".headNav li").click(function(){
+                $(this).addClass("style").siblings("li").removeClass("style");
+                var indexs=$(this).index();
+                $(".dataCon .data").eq(indexs).show().siblings().hide();
+            })*/
+
+        });
+    </script>
+    <script type="text/javascript" src="../js/uploadCommon.js"></script>
+    <script>
+        $(function(){
+            $(".inputMsg input").blur(function(){
+                var values=$(this).val();
+                var indexs = $(this).index()-1;
+                if(values ==""){
+                    $(this).siblings("span").eq(indexs).css("color","#d8251e").html("内容不能为空");
+                }
+                else if(values!==""){
+                    $(this).siblings("span").eq(indexs).css("display","none");
+                }
+            });
+            $(".inputTxt input").blur(function(){
+                var values=$(this).val();
+                var indexs = $(this).index()-1;
+                if(values ==""){
+                    $(this).siblings("span").eq(indexs).css("color","#d8251e").html("内容不能为空");
+                }
+                else if(values!==""){
+                    $(this).siblings("span").eq(indexs).css("display","none");
+                }
+            });
+        })
+    </script>
+</head>
+<body>
+<div class="header">
+    <div class="center">
+        <div class="logo"></div>
+        <!--已登录样式-->
+        <div class="userBK login">
+            <div class="face">
+                <img src="../imgs/default.png" alt="头像">
+            </div>
+            <div class="nickname">汪苏泷经纪人</div>
+            <div class="actions">
+                <a href="#exitLogin" class="exitLogin">[退出]</a>
+            </div>
+        </div>
+        <div class="userBK unlogin" style="display: none">
+            <div class="face">
+                <img src="../imgs/default.png" alt="头像">
+            </div>
+            <div class="nickname">汪苏泷经纪人</div>
+            <div class="actions">
+                <a href="#toLogin" class="exitLogin">[登录]</a>
+                <a href="#toRegister" class="exitLogin">[注册]</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="upDate">
+    <ul class="topNav">
+        <li><a href="index.html">首页</a>> </li>
+        <li><a href="">企业认证</a>> </li>
+        <li><a href="identi1.html">参演协议</a> </li>
+    </ul>
+    <div class="topHead">
+        <img src="../imgs/identi03.jpg"/>
+    </div>
+
+    <div class="dateCon">
+        <div class="headNav">
+            <ul>
+                <li class="qi"><a href="">企业业务资料</a></li>
+                <li><a href="">个人业务资料</a></li>
+            </ul>
+        </div>
+        <div class="dataCon">
+             <div class="data">
+                 <div class="msg1 clear">
+                     <div class="inputMsg">
+                         <label><em>*</em>企业名称</label>
+                         <input type="text"/>
+                         <span>请输入营业执照上的全称，只支持中国大陆工商局或市场监督管理局登记的企业</span>
+                     </div>
+                     <div class="inputMsg">
+                         <label><em>*</em>营业执照注册号</label>
+                         <input type="text"/>
+                         <span>输入15位营业执照注册号或18位统一社会信用代码</span>
+                     </div>
+                     <div class="inputMsg">
+                         <label style="line-height: 18px; vertical-align: top;"><em>*</em>法定代表人/企业负责人姓名</label>
+                         <input type="text"/>
+                         <span>按照营业执照上填写。如果属于分公司则填写工商营业执照上明确的负责人，个体工商户请填写经营者姓名，合伙企业请填写投资人姓名，企业法人的非法人分支机构填写负责人姓名。</span>
+                     </div>
+                     <div class="inputMsg">
+                         <label style=" vertical-align: top;"><em>*</em>营业执照注册号</label>
+                         <textarea type="text" class="msgs"></textarea>
+                         <span>输入15位营业执照注册号或18位统一社会信用代码</span>
+                     </div>
+                     <div class="inputMsg">
+                         <label style=" vertical-align: top;"><em>*</em>营业执照注册号</label>
+                         <textarea type="text" class="msgs"></textarea>
+                         <span>没有可填“无”</span>
+                     </div>
+                 </div>
+                 <div class="headNav" style="text-align: center;">运营者资料</div>
+                 <div class="msg2">
+                     <div class="inputTxt">
+                         <label><em>*</em>运营者姓名</label>
+                         <input type="text"/>
+                         <span></span>
+                     </div>
+                     <div class="inputTxt">
+                         <label><em>*</em>运营者身份证号码</label>
+                         <input type="text"/>
+                     </div>
+                     <div class="inputTxt">
+                         <label><em>*</em>运营者手机号码</label>
+                         <input type="text" class="codeTxt"/>
+                         <a class="gain">获取验证码</a>
+                     </div>
+                     <div class="inputTxt">
+                         <label><em>*</em>短信验证码</label>
+                         <input type="text" class="phoneInput"/>
+                         <i class="icon bg04"></i>
+                         <i class="icon bg05"></i>
+                     </div>
+                     <div class="inputTxt">
+                         <label><em>*</em>运营者座机</label>
+                         <input type="text"/>
+                         <span>包括区号、电话，以“-”隔开</span>
+                     </div>
+                     <div class="inputTxt">
+                         <label><em>*</em>电子邮箱</label>
+                         <input type="text" id="mail"/>
+                     </div>
+                     <div class="inputTxt">
+                         <label>YAMA</label>
+                         <input type="text"/>
+                     </div>
+                 </div>
+                 <div class="headNav" style="text-align: center;">企业资料</div>
+                 <div class="msg3">
+                     <div class="msgg">
+                         <div class="labels fl">
+                             <label>
+                                 <em>*</em>
+                                 企业工商营业执照
+                             </label>
+                         </div>
+                         <div class="noImg fl">
+                             暂无图片
+                         </div>
+                         <div class="upload fl">
+                             <div>不超过2M的 JPG、PNG、GIF、PDF、JPEG</div>
+                             <div class="upImg">
+                                 上传图片
+                                 <input type="file"/>
+                             </div>
+                             <p>只支持中国大陆工商局或市场监督管理局办法的工商营业执照，且必须在有效期内。若办理过三证合一的企业，请再次上传最新的营业执照。非中国大陆地区认证请参考海外认证。</p>
+                         </div>
+                     </div><!--msgg/-->
+                     <div class="msgg">
+                         <div class="labels fl">
+                             <label>
+                                 <em>*</em>
+                                 认证公函
+                             </label>
+                         </div>
+                         <div class="noImg fl">
+                             暂无图片
+                         </div>
+                         <div class="upload fl">
+                             <div>不超过2M的 JPG、PNG、GIF、PDF、JPEG</div>
+                             <div class="upImg">
+                                 上传图片
+                                 <input type="file"/>
+                             </div>
+                             <p>只支持中国大陆工商局或市场监督管理局办法的工商营业执照，且必须在有效期内。若办理过三证合一的企业，请再次上传最新的营业执照。非中国大陆地区认证请参考海外认证。</p>
+                         </div>
+                     </div><!--msgg/-->
+                     <div class="msgg">
+                         <div class="labels fl">
+                             <label>
+                                 <em>*</em>
+                                 商标注册证
+                             </label>
+                         </div>
+                         <div class="noImg fl">
+                             暂无图片
+                         </div>
+                         <div class="upload fl">
+                             <div>不超过2M的 JPG、PNG、GIF、PDF、JPEG</div>
+                             <div class="upImg">
+                                 上传图片
+                                 <input type="file"/>
+                             </div>
+                             <p>只支持中国大陆工商局或市场监督管理局办法的工商营业执照，且必须在有效期内。若办理过三证合一的企业，请再次上传最新的营业执照。非中国大陆地区认证请参考海外认证。</p>
+                         </div>
+                     </div><!--msgg/-->
+                     <div class="msgg">
+                         <div class="labels fl">
+                             <label>
+                                 <em>*</em>
+                                 网站ICP备案查询截图
+                             </label>
+                         </div>
+                         <div class="noImg fl">
+                             暂无图片
+                         </div>
+                         <div class="upload fl">
+                             <div>不超过2M的 JPG、PNG、GIF、PDF、JPEG</div>
+                             <div class="upImg">
+                                 上传图片
+                                 <input type="file"/>
+                             </div>
+                             <p>只支持中国大陆工商局或市场监督管理局办法的工商营业执照，且必须在有效期内。若办理过三证合一的企业，请再次上传最新的营业执照。非中国大陆地区认证请参考海外认证。</p>
+                         </div>
+                     </div><!--msgg/-->
+                     <div class="msgg">
+                         <div class="labels fl">
+                             <label>
+                                 <em>*</em>
+                                 软件著作证
+                             </label>
+                         </div>
+                         <div class="noImg fl">
+                             暂无图片
+                         </div>
+                         <div class="upload fl">
+                             <div>不超过2M的 JPG、PNG、GIF、PDF、JPEG</div>
+                             <div class="upImg">
+                                 上传图片
+                                 <input type="file"/>
+                             </div>
+                             <p>只支持中国大陆工商局或市场监督管理局办法的工商营业执照，且必须在有效期内。若办理过三证合一的企业，请再次上传最新的营业执照。非中国大陆地区认证请参考海外认证。</p>
+                         </div>
+                     </div><!--msgg/-->
+                     <div class="msgg">
+                         <div class="labels fl">
+                             <label>
+                                 <em>*</em>
+                                 其他材料
+                             </label>
+                         </div>
+                         <div class="noImg fl">
+                             暂无图片
+                         </div>
+                         <div class="upload fl">
+                             <div>不超过2M的 JPG、PNG、GIF、PDF、JPEG</div>
+                             <div class="upImg">
+                                 上传图片
+                                 <input type="file"/>
+                             </div>
+                             <p>只支持中国大陆工商局或市场监督管理局办法的工商营业执照，且必须在有效期内。若办理过三证合一的企业，请再次上传最新的营业执照。非中国大陆地区认证请参考海外认证。</p>
+                         </div>
+                     </div><!--msgg/-->
+                 </div>
+             </div><!--data/-->
+            <div class="data">
+                <div class="msg2">
+                    <div class="inputTxt">
+                        <label><em>*</em>运营者姓名</label>
+                        <input type="text"/>
+                    </div>
+                    <div class="inputTxt">
+                        <label><em>*</em>运营者身份证号码</label>
+                        <input type="text"/>
+                    </div>
+                    <div class="inputTxt">
+                        <label><em>*</em>运营者手机号码</label>
+                        <input type="text" class="codeTxt"/>
+                        <a class="gain">获取验证码</a>
+                    </div>
+                    <div class="inputTxt">
+                        <label><em>*</em>短信验证码</label>
+                        <input type="text" class="phoneInput"/>
+                        <i class="icon bg04"></i>
+                        <i class="icon bg05"></i>
+                    </div>
+                    <div class="inputTxt">
+                        <label><em>*</em>运营者座机</label>
+                        <input type="text"/>
+                        <span>包括区号、电话，以“-”隔开</span>
+                    </div>
+                    <div class="inputTxt">
+                        <label><em>*</em>电子邮箱</label>
+                        <input type="text"/>
+                    </div>
+                    <div class="inputTxt">
+                        <label>YAMA</label>
+                        <input type="text"/>
+                    </div>
+                </div>
+            </div><!--data/-->
+        </div><!--dataCon/-->
+
+        <div class="btns clear">
+            <a href="identi2.html" class="up">上一步</a>
+            <a href="identi4.html" class="down">下一步</a>
+        </div>
+    </div>
+    <div class="dateFoot">
+        如有问题，请联系客服QQ：4534534534
+    </div>
+</div>
+</body>
+</html>

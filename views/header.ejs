@@ -1,7 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-</head>
-<body>
+<div class="header">
+    <div class="center">
+        <div class="logo"></div>
+        <!--已登录样式-->
+        <div class="userBK login">
+            <div class="face">
+                <img src="../imgs/default.png" alt="头像">
+            </div>
+            <div class="nickname">汪苏泷经纪人</div>
+            <div class="actions">
+                <a href="#exitLogin" class="exitLogin">[退出]</a>
+            </div>
+        </div>
+        <div class="userBK unlogin" style="display: none">
+            <div class="face">
+                <img src="../imgs/default.png" alt="头像">
+            </div>
+            <div class="nickname">汪苏泷经纪人</div>
+            <div class="actions">
+                <a href="#toLogin" class="exitLogin">[登录]</a>
+                <a href="#toRegister" class="exitLogin">[注册]</a>
+            </div>
+        </div>
+    </div>
+</div>

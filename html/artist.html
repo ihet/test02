@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>火秀tv艺人自主上传系统</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="webkit|ie-comp|ie-stand" name="renderer">
+    <meta name="robots" content="nofollow">
+    <meta name="keywords"
+          content="51tv，火秀tv，素人，无名艺人，素人艺术家，素人演唱会，素人乐队，素人秀，生活秀，4K，VR，VR直播，全民直播，全景直播，现场实况，演唱会，直播，娱乐，时尚，表演，才艺，生活，音乐，互动">
+    <meta name="description"
+          content="火秀tv - 素人演唱会直播，为素人艺术家实现举办个人演唱会梦想而存在。专业级策划，专业级舞台，专业级幕后，专业级舞美，专业级灯光，专业级音响，专业级舞团。全网超清直播，4K.VR全景直播双路实时放送。100%观众投票决胜负。">
+    <link href="../css/uploadCommon.css" type="text/css" rel="stylesheet"/>
+    <link href="../css/artist.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="../js/lib/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/uploadCommon.js"></script>
+    <script type="text/javascript" src="jedate/jedate.js"></script>
+    <link type="text/css" rel="stylesheet" href="jedate/skin/jedate.css">
+    <script>
+        $(function() {
+            $('label').click(function(){
+                var radioId = $(this).attr('name');
+                $('label').removeAttr('class') && $(this).attr('class', 'checked');
+                $('input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+                /*$('input[type="radio"]:checked').attr('value');//取得选中的值*/
+            });
+        });
+    </script>
+    <script>
+        $(function(){
+            $(".worksHead li:first").addClass("styles");
+            $(".works .worksCon:not(:first)").hide();
+            $(".worksHead li").click(function(){
+                $(this).addClass("styles").siblings("li").removeClass("styles");
+                var indexs=$(this).index();
+                $(".works .worksCon").eq(indexs).show().siblings().hide();
+            })
+        });
+    </script>
+</head>
+<body>
+<div class="header">
+    <div class="center">
+        <div class="logo"></div>
+        <!--已登录样式-->
+        <div class="userBK login">
+            <div class="face">
+                <img src="../imgs/default.png" alt="头像">
+            </div>
+            <div class="nickname">汪苏泷经纪人</div>
+            <div class="actions">
+                <a href="#exitLogin" class="exitLogin">[退出]</a>
+            </div>
+        </div>
+        <div class="userBK unlogin" style="display: none">
+            <div class="face">
+                <img src="../imgs/default.png" alt="头像">
+            </div>
+            <div class="nickname">汪苏泷经纪人</div>
+            <div class="actions">
+                <a href="#toLogin" class="exitLogin">[登录]</a>
+                <a href="#toRegister" class="exitLogin">[注册]</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="upDate">
+    <ul class="topNav">
+        <li><a href="index.html">首页</a>> </li>
+        <li><a href="art.html">旗下艺人</a></li>
+    </ul>
+    <div class="dateCon">
+        <div class="headNav" style="text-align: center;">
+            旗下艺人
+        </div>
+        <div class="introCon">
+             <div class="introLeft fl">
+                 <img src="../imgs/art.jpg"/>
+             </div>
+            <div class="introRight fl">
+                <div class="nameHead">
+                    汪苏泷
+                    <a href="" class="fr">修改信息</a>
+                </div>
+                <ul>
+                    <div>
+                        <li><span>性别：</span>男</li>
+                        <li><span>经纪公司：</span>华谊兄弟</li>
+                        <li><span>入驻时间：</span>2014-09-10</li>
+                    </div>
+
+                    <div>
+                        <li><span>粉丝：</span>24,685</li>
+                        <li><span>YAMA&nbsp;&nbsp;号：</span>34400</li>
+                        <li><span>评级：</span>A</li>
+                    </div>
+                    <div>
+                        <li><span>人气：</span>658,733,000</li>
+                        <li><span>收益：</span>￥4,500</li>
+                        <li><span>分成比例：</span>2:8</li>
+                    </div>
+                    <li><span>简介：</span>QQ音乐三大才子，徐良的好友</li>
+                </ul>
+            </div>
+        </div><!--introCon/-->
+        <!--<div class="worksHead">
+            <div class="ta fl">TA的作品</div>
+            <div class="pages fr">
+                <a href="" class="current">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+            </div>
+        </div>-->
+        <ul class="worksHead">
+            <li>作品列表</li>
+            <li>收益详情</li>
+        </ul>
+        <div class="works">
+            <div class="worksCon clear">
+            <div class="workDl">
+                <a href="">
+                    <dl>
+                        <dt>
+                            <img src="../imgs/art.jpg"/>
+                            <div class="iconn">
+                                <i class="icons bg10"></i>
+                                <i class="icons bg12"></i>
+                            </div>
+                        </dt>
+                        <dd>I Believeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</dd>
+                    </dl>
+                </a>
+                <a href="">
+                    <dl>
+                        <dt>
+                            <img src="../imgs/art.jpg"/>
+                            <div class="iconn">
+                                <i class="icons bg09"></i>
+                                <i class="icons bg11"></i>
+                            </div>
+                        </dt>
+                        <dd>I Believe</dd>
+                    </dl>
+                </a>
+                <a href="">
+                    <dl>
+                        <dt>
+                            <img src="../imgs/art.jpg"/>
+                            <div class="iconn">
+                                <i class="icons bg09"></i>
+                                <i class="icons bg12"></i>
+                            </div>
+                        </dt>
+                        <dd>I Believe</dd>
+                    </dl>
+                </a>
+                <a href="">
+                    <dl>
+                        <dt>
+                            <img src="../imgs/art.jpg"/>
+                            <div class="iconn">
+                                <i class="icons bg10"></i>
+                                <i class="icons bg11"></i>
+                            </div>
+                        </dt>
+                        <dd>I Believe</dd>
+                    </dl>
+                </a>
+                <a href="">
+                    <dl>
+                        <dt>
+                            <img src="../imgs/art.jpg"/>
+                            <div class="iconn">
+                                <i class="icons bg09"></i>
+                                <i class="icons bg12"></i>
+                            </div>
+                        </dt>
+                        <dd>I Believe</dd>
+                    </dl>
+                </a>
+                <a href="">
+                    <dl>
+                        <dt>
+                            <img src="../imgs/art.jpg"/>
+                            <div class="iconn">
+                                <i class="icons bg09"></i>
+                                <i class="icons bg12"></i>
+                            </div>
+                        </dt>
+                        <dd>I Believe</dd>
+                    </dl>
+                </a>
+                <a href="">
+                    <dl>
+                        <dt>
+                            <img src="../imgs/art.jpg"/>
+                            <div class="iconn">
+                                <i class="icons bg09"></i>
+                                <i class="icons bg12"></i>
+                            </div>
+                        </dt>
+                        <dd>I Believe</dd>
+                    </dl>
+                </a>
+                <a href="">
+                    <dl>
+                        <dt>
+                            <img src="../imgs/art.jpg"/>
+                        <div class="iconn">
+                            <i class="icons bg09"></i>
+                            <i class="icons bg12"></i>
+                        </div>
+                        </dt>
+                        <dd>I Believe</dd>
+                   </dl>
+                </a>
+            </div>
+            <div class="radios">
+                <div class="worksHead">
+                    <div class="ta fl">TA的直播</div>
+                </div>
+                <a href="">
+                    <dl>
+                        <dt>
+                            <img src="../imgs/art.jpg"/>
+                            <p class="dateTime">
+                               01:32:17
+                            </p>
+                        </dt>
+                        <dd>我来yama直播啦aaaaaaaaaa</dd>
+                    </dl>
+                </a>
+            </div>
+            <!--<div class="all">
+                收益总额：
+                <span>￥90,600</span>
+            </div>-->
+        </div><!--worksCon/-->
+        <div class="worksCon clear" style="margin-top: 0px;">
+             <div class="choose">
+                 <div class="chooseTime fl">
+                     <input type="radio" id="nba" checked="checked" name="sport" value="nba">
+                     <label name="nba" class="checked" for="nba">全部</label>
+                     <input type="radio" id="cba" name="sport" value="cba" style="margin-left: 10px;">
+                     <label name="cba" for="cba">时间</label>
+                     <div class="dates" style="position: relative;display: inline;margin-left: 10px;">
+                         从<input type="text" placeholder="2011-01-09" id="textymdhms" readonly/>
+                         <i class="icons bg22" style="position: absolute;right:23px;top:3px"></i>
+                     </div>
+                     至
+                     <div class="dates" style="position: relative;display: inline;">
+                         <input type="text" placeholder="2011-01-09" id="textymdhm" readonly/>
+                         <i class="icons bg22" style="position: absolute;right:23px;top:3px"></i>
+                     </div>
+                 </div>
+                 <div class="chooseBtn fr">
+                    <input type="text" value="筛选" class="shai"/>
+                     <input type="text" value="下载明细" class="load"/>
+                 </div>
+             </div><!--choose/-->
+             <div class="gains">
+                 <table>
+                     <tr>
+                         <td>礼物</td>
+                         <td>数量</td>
+                         <td>来源</td>
+                         <td>时间</td>
+                         <td>收入（YAMA票）</td>
+                     </tr>
+                     <tr>
+                         <td>
+                             <i class="icons bg23"></i>
+                             鲜花
+                         </td>
+                         <td>100</td>
+                         <td>abc3dfw</td>
+                         <td>2016-09-31 11:10:34</td>
+                         <td>10,000</td>
+                     </tr>
+                     <tr>
+                         <td>
+                             <i class="icons bg23"></i>
+                             鲜花
+                         </td>
+                         <td>100</td>
+                         <td>abc3dfw</td>
+                         <td>2016-09-31 11:10:34</td>
+                         <td>10,000</td>
+                     </tr>
+                     <tr>
+                         <td>
+                             <i class="icons bg23"></i>
+                             鲜花
+                         </td>
+                         <td>100</td>
+                         <td>abc3dfw</td>
+                         <td>2016-09-31 11:10:34</td>
+                         <td>10,000</td>
+                     </tr>
+                 </table>
+             </div>
+             <div class="pageCon">
+                 <div class="pageLeft fl">
+                      每页
+                     <select>
+                         <option></option>
+                         <option></option>
+                         <option></option>
+                     </select>
+                     页
+                 </div>
+                 <div class="pageRight fr">
+                     <a class="style">1</a>
+                     <a>2</a>
+                     <a>3</a>
+                     <a>...</a>
+                     <a>14</a>
+                     <span>
+                         跳转到
+                         <input type="text"/>
+                         页
+                     </span>
+                 </div>
+             </div>
+        </div>
+        </div><!--works/-->
+    </div>
+    <div class="dateFoot">
+        如有问题，请联系客服QQ：4534534534
+    </div>
+</div>
+<script type="text/javascript">
+    jeDate({
+        dateCell:"#textymdhms",
+        format:"YYYY-MM-DD",
+        //isinitVal:true,
+        //isTime:true,
+        festival: true, //显示节日
+        minDate:"2015-09-19",
+        maxDate:"2019-09-19"
+    })
+    jeDate({
+        dateCell:"#texthms"
+    });
+    jeDate({
+        dateCell:"#textymdhm",
+        format:"YYYY-MM-DD",
+        //isinitVal:true,
+        //isTime:true,
+        festival: true, //显示节日
+        minDate:"2015-09-19",
+        maxDate:"2019-09-19"
+    })
+    jeDate({
+        dateCell:"#texthms"
+    });
+</script>
+</body>
+
+</html>

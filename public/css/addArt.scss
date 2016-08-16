@@ -1,0 +1,200 @@
+.upDate{
+  width: 900px;
+  height: 100%;
+  margin: 10px auto 0 auto;
+  .topNav{
+    line-height: 45px;
+    li{
+      float: left;
+      color: #999;
+    }
+    a{
+      font-size: 14px;
+      color: #999;
+    }
+  }
+
+  .dateCon{
+    width: 802px;
+    background-color: #fff;
+    padding: 0 49px 34px 49px;
+    clear: both;
+    box-shadow:0 1px 5px #ccc;
+    .headNav{
+      width: 100%;
+      line-height:62px;
+      border-bottom: #dedede 1px solid;
+      margin-bottom: 32px;
+      color: #000;
+      font-size:18px;
+      font-weight:bold;
+      position: relative;
+      .ups{
+        display: inline-block;
+        width: 85px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        color: #fff;
+        background-color: #d8251e;
+        position: absolute;
+        right:10px;
+        top:12px;
+      }
+    }
+    .searchs{
+      width: 240px;
+      height: 40px;
+      background-color: #f6f6f6;
+      margin-top: 35px;
+      margin-bottom: 35px;
+      position: relative;
+      input{
+        display: inline-block;
+        width:183px;
+        padding-left: 10px;
+        line-height: 40px;
+        border:none;
+        background: none;
+        outline: none;
+      }
+      button{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border:none;
+        position: absolute;
+        right:0;
+        top:0;
+        outline: none;
+      }
+      img{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .arts{
+      width: 100%;
+      min-height:600px;
+      .artList{
+        width: 120px;
+        height: 160px;
+        float: left;
+        margin: 0 37px 62px 37px;
+      }
+      dl{
+        position: relative;
+        z-index:99;
+        dt{
+          width: 120px;
+          height: 120px;
+          img{
+            width: 120px;
+            height: 120px;
+            border-radius:120px;
+          }
+        }
+        dd{
+          text-align: center;
+          color: #000;
+        }
+        .ddStyle{
+          margin: 13px 0;
+        }
+        .shen{
+          width: 80px;
+          line-height: 32px;
+          background-color: #d8251e;
+          text-align: center;
+          a{
+            color: #fff;
+          }
+        }
+        .bang{
+          width: 78px;
+          line-height: 30px;
+          background-color: #f6f6f6;
+          text-align: center;
+          border: #dedede 1px solid;
+          a{
+            color: #999;
+          }
+        }
+      }
+      dl:hover .alertMsg{
+        display: block;
+      }
+    }
+    .alertMsg{
+      padding: 13px;
+      width: 293px;
+      height: 106px;
+      background-color: #fff;
+      box-shadow: 0px 1px 5px #ccc;
+      position: absolute;
+      right:-230px;
+      top:-60px;
+      z-index:99999999999;
+      display:none;
+      .alertLeft{
+        width: 72px;
+        margin-right: 16px;
+        img{
+          width: 72px;
+          height: 72px;
+          border-radius:0px;
+        }
+      }
+      .alertRight{
+        width: 200px;
+        .names{
+          font-size: 18px;
+          color: #000;
+          margin-bottom: 22px;
+        }
+        .numbers{
+          color: #bbb;
+          span{
+            color: #000;
+          }
+        }
+      }
+      .intro{
+        line-height: 38px;
+        color: #666;
+      }
+    }
+
+
+    .btns{
+      margin:0 32%;
+      a{
+        display: inline-block;
+        width: 126px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        color: #dedede;
+        font-size: 16px;
+      }
+      .up{
+        background-color: #333;
+      }
+      .down{
+        background-color: #d8251e;
+        margin-left: 20px;
+      }
+    }
+
+  }
+  .dateFoot{
+    width: 100%;
+    line-height: 58px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    background-color: #f6f6f6;
+    box-shadow: 0 1px 5px #ccc;
+  }
+}

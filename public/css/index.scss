@@ -1,0 +1,98 @@
+.upDate{
+  width: 900px;
+  height: 100%;
+  margin: 160px auto 0 auto;
+  .topNav{
+    line-height: 45px;
+    li{
+      float: left;
+      color: #999;
+    }
+    a{
+      font-size: 14px;
+      color: #999;
+    }
+  }
+
+  .dateCon{
+    width: 802px;
+    background-color: #fff;
+    padding: 0 49px 34px 49px;
+    clear: both;
+    box-shadow:0 1px 5px #ccc;
+    margin-top: 67px;
+    .headNav{
+      width: 100%;
+      line-height:62px;
+      border-bottom: #dedede 1px solid;
+      margin-bottom: 32px;
+      position: relative;
+      .ups{
+        display: inline-block;
+        width: 85px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        color: #fff;
+        background-color: #d8251e;
+        position: absolute;
+        right:10px;
+        top:12px;
+      }
+    }
+   .indexCon{
+     width: 100%;
+     overflow: hidden;
+     zoom:1;
+     padding: 65px 0;
+     dl{
+       width: 124px;
+       height: 186px;
+       float: left;
+       margin: 0 38px;
+       dd{
+         width: 100%;
+         text-align: center;
+         color: #ccc;
+         font-size: 12px;
+       }
+       .dds{
+         margin: 21px 0 12px 0;
+         color: #000;
+         font-size: 16px;
+       }
+     }
+   }
+
+
+    .btns{
+      margin:0 32%;
+      a{
+        display: inline-block;
+        width: 126px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        color: #dedede;
+        font-size: 16px;
+      }
+      .up{
+        background-color: #333;
+      }
+      .down{
+        background-color: #d8251e;
+        margin-left: 20px;
+      }
+    }
+
+  }
+  .dateFoot{
+    width: 100%;
+    line-height: 58px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    background-color: #f6f6f6;
+    box-shadow: 0 1px 5px #ccc;
+  }
+}

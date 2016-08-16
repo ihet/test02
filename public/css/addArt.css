@@ -1,0 +1,162 @@
+.upDate {
+  width: 900px;
+  height: 100%;
+  margin: 10px auto 0 auto; }
+  .upDate .topNav {
+    line-height: 45px; }
+    .upDate .topNav li {
+      float: left;
+      color: #999; }
+    .upDate .topNav a {
+      font-size: 14px;
+      color: #999; }
+  .upDate .dateCon {
+    width: 802px;
+    background-color: #fff;
+    padding: 0 49px 34px 49px;
+    clear: both;
+    box-shadow: 0 1px 5px #ccc; }
+    .upDate .dateCon .headNav {
+      width: 100%;
+      line-height: 62px;
+      border-bottom: #dedede 1px solid;
+      margin-bottom: 32px;
+      color: #000;
+      font-size: 18px;
+      font-weight: bold;
+      position: relative; }
+      .upDate .dateCon .headNav .ups {
+        display: inline-block;
+        width: 85px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        color: #fff;
+        background-color: #d8251e;
+        position: absolute;
+        right: 10px;
+        top: 12px; }
+    .upDate .dateCon .searchs {
+      width: 240px;
+      height: 40px;
+      background-color: #f6f6f6;
+      margin-top: 35px;
+      margin-bottom: 35px;
+      position: relative; }
+      .upDate .dateCon .searchs input {
+        display: inline-block;
+        width: 183px;
+        padding-left: 10px;
+        line-height: 40px;
+        border: none;
+        background: none;
+        outline: none; }
+      .upDate .dateCon .searchs button {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        outline: none; }
+      .upDate .dateCon .searchs img {
+        display: inline-block;
+        width: 40px;
+        height: 40px; }
+    .upDate .dateCon .arts {
+      width: 100%;
+      min-height: 600px; }
+      .upDate .dateCon .arts .artList {
+        width: 120px;
+        height: 160px;
+        float: left;
+        margin: 0 37px 62px 37px; }
+      .upDate .dateCon .arts dl {
+        position: relative;
+        z-index: 99; }
+        .upDate .dateCon .arts dl dt {
+          width: 120px;
+          height: 120px; }
+          .upDate .dateCon .arts dl dt img {
+            width: 120px;
+            height: 120px;
+            border-radius: 120px; }
+        .upDate .dateCon .arts dl dd {
+          text-align: center;
+          color: #000; }
+        .upDate .dateCon .arts dl .ddStyle {
+          margin: 13px 0; }
+        .upDate .dateCon .arts dl .shen {
+          width: 80px;
+          line-height: 32px;
+          background-color: #d8251e;
+          text-align: center; }
+          .upDate .dateCon .arts dl .shen a {
+            color: #fff; }
+        .upDate .dateCon .arts dl .bang {
+          width: 78px;
+          line-height: 30px;
+          background-color: #f6f6f6;
+          text-align: center;
+          border: #dedede 1px solid; }
+          .upDate .dateCon .arts dl .bang a {
+            color: #999; }
+      .upDate .dateCon .arts dl:hover .alertMsg {
+        display: block; }
+    .upDate .dateCon .alertMsg {
+      padding: 13px;
+      width: 293px;
+      height: 106px;
+      background-color: #fff;
+      box-shadow: 0px 1px 5px #ccc;
+      position: absolute;
+      right: -230px;
+      top: -60px;
+      z-index: 99999999999;
+      display: none; }
+      .upDate .dateCon .alertMsg .alertLeft {
+        width: 72px;
+        margin-right: 16px; }
+        .upDate .dateCon .alertMsg .alertLeft img {
+          width: 72px;
+          height: 72px;
+          border-radius: 0px; }
+      .upDate .dateCon .alertMsg .alertRight {
+        width: 200px; }
+        .upDate .dateCon .alertMsg .alertRight .names {
+          font-size: 18px;
+          color: #000;
+          margin-bottom: 22px; }
+        .upDate .dateCon .alertMsg .alertRight .numbers {
+          color: #bbb; }
+          .upDate .dateCon .alertMsg .alertRight .numbers span {
+            color: #000; }
+      .upDate .dateCon .alertMsg .intro {
+        line-height: 38px;
+        color: #666; }
+    .upDate .dateCon .btns {
+      margin: 0 32%; }
+      .upDate .dateCon .btns a {
+        display: inline-block;
+        width: 126px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        color: #dedede;
+        font-size: 16px; }
+      .upDate .dateCon .btns .up {
+        background-color: #333; }
+      .upDate .dateCon .btns .down {
+        background-color: #d8251e;
+        margin-left: 20px; }
+  .upDate .dateFoot {
+    width: 100%;
+    line-height: 58px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    background-color: #f6f6f6;
+    box-shadow: 0 1px 5px #ccc; }
+
+/*# sourceMappingURL=addArt.css.map */

@@ -1,0 +1,146 @@
+.upDate{
+  width: 900px;
+  height: 100%;
+  margin: 10px auto 0 auto;
+  .topNav{
+    line-height: 45px;
+    li{
+      float: left;
+      color: #999;
+    }
+    a{
+      font-size: 14px;
+      color: #999;
+    }
+  }
+
+  .dateCon{
+    width: 802px;
+    height: auto;
+    background-color: #fff;
+    padding: 0 49px 34px 49px;
+    clear: both;
+    box-shadow:0 1px 5px #ccc;
+    .headNav{
+      width: 100%;
+      line-height:62px;
+      border-bottom: #dedede 1px solid;
+      margin-bottom: 32px;
+      position: relative;
+      .ups{
+        display: inline-block;
+        width: 85px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        color: #fff;
+        background-color: #d8251e;
+        position: absolute;
+        right:10px;
+        top:12px;
+      }
+    }
+    .arts{
+      width: 100%;
+      height: auto;
+      .artList{
+        width: 120px;
+        height: 160px;
+        float: left;
+        margin: 0 37px 30px 37px;
+      }
+      dl{
+        display: inline;
+        position: relative;
+        z-index:99;
+        dt{
+          width: 120px;
+          height: 120px;
+          img{
+            width: 120px;
+            height: 120px;
+            border-radius:120px;
+          }
+        }
+        dd{
+          line-height: 40px;
+          text-align: center;
+          color: #000;
+        }
+      }
+      dl:hover .alertMsg{
+        display: block;
+      }
+    }
+    .alertMsg{
+      padding: 13px;
+      width: 293px;
+      height: 106px;
+      background-color: #fff;
+      box-shadow: 0px 1px 5px #ccc;
+      position: absolute;
+      right:-350px;
+      top:-60px;
+      z-index:99999999999;
+      display:none;
+      .alertLeft{
+        width: 72px;
+        margin-right: 16px;
+        img{
+          width: 72px;
+          height: 72px;
+          border-radius:0px;
+        }
+      }
+      .alertRight{
+        width: 200px;
+        .names{
+          font-size: 18px;
+          color: #000;
+          margin-bottom: 22px;
+        }
+        .numbers{
+          color: #bbb;
+          span{
+            color: #000;
+          }
+        }
+      }
+      .intro{
+        line-height: 38px;
+        color: #666;
+      }
+    }
+
+
+    .btns{
+      margin:0 32%;
+      a{
+        display: inline-block;
+        width: 126px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        color: #dedede;
+        font-size: 16px;
+      }
+      .up{
+        background-color: #333;
+      }
+      .down{
+        background-color: #d8251e;
+        margin-left: 20px;
+      }
+    }
+
+  }
+  .dateFoot{
+    width: 100%;
+    line-height: 58px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    background-color: #f6f6f6;
+    box-shadow: 0 1px 5px #ccc;
+  }
+}

@@ -1,0 +1,73 @@
+.upDate {
+  width: 900px;
+  height: 100%;
+  margin: 5% auto 0 auto; }
+  .upDate .topNav {
+    line-height: 40px; }
+    .upDate .topNav li {
+      float: left;
+      color: #999; }
+    .upDate .topNav a {
+      font-size: 14px;
+      color: #999; }
+  .upDate .dateCon {
+    width: 802px;
+    height: 558px;
+    background-color: #fff;
+    padding: 34px 49px;
+    clear: both;
+    box-shadow: 0 1px 5px #ccc; }
+    .upDate .dateCon .inputTxt {
+      margin-bottom: 20px; }
+      .upDate .dateCon .inputTxt label {
+        display: inline-block;
+        width: 125px;
+        text-align: right;
+        margin-right: 30px; }
+        .upDate .dateCon .inputTxt label em {
+          color: #f00; }
+      .upDate .dateCon .inputTxt input {
+        display: inline-block;
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #f6f6f6; }
+      .upDate .dateCon .inputTxt span {
+        display: inline-block;
+        color: #bbb;
+        font-size: 14px;
+        line-height: 40px;
+        margin-left: 26px; }
+      .upDate .dateCon .inputTxt .codeTxt {
+        width: 90px; }
+      .upDate .dateCon .inputTxt .numTxt {
+        width: 100px; }
+      .upDate .dateCon .inputTxt .gain {
+        display: inline-block;
+        width: 94px;
+        line-height: 36px;
+        background: url("../imgs/passbg.jpg") repeat-x;
+        text-align: center;
+        border: #dedede 1px solid;
+        padding-bottom: 2px;
+        margin-left: 10px; }
+    .upDate .dateCon .sure {
+      display: inline-block;
+      width: 126px;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      color: #dedede;
+      background-color: #d8251e;
+      margin: 0 40%;
+      font-size: 16px; }
+  .upDate .dateFoot {
+    width: 100%;
+    line-height: 58px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    background-color: #f6f6f6;
+    box-shadow: 0 1px 5px #ccc; }
+
+/*# sourceMappingURL=update.css.map */

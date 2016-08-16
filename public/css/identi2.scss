@@ -1,0 +1,126 @@
+.upDate{
+  width: 900px;
+  height: 100%;
+  margin: 5% auto 0 auto;
+  .topNav{
+    line-height: 40px;
+    li{
+      float: left;
+      color: #999;
+    }
+    a{
+      font-size: 14px;
+      color: #999;
+    }
+  }
+
+  .dateCon{
+    width: 802px;
+    background-color: #fff;
+    padding: 34px 49px;
+    clear: both;
+    box-shadow:0 1px 5px #ccc;
+   .avatars{
+     width: 695px;
+     margin: 0 auto;
+     overflow: hidden;zoom:1;
+     .avatarLeft{
+       width: 160px;
+       dl{
+         dt{
+           margin-bottom: 20px;
+         }
+         dd{
+           width: 160px;
+           height: 38px;
+           line-height: 38px;
+           text-align: center;
+           border: #000 1px solid;
+           position: relative;
+           input{
+             position: absolute;
+             left:0;
+             top:10px;
+             outline: none;
+             opacity: 0;
+             cursor: pointer;
+           }
+         }
+       }
+     }
+     .msgRight{
+       width: 466px;
+       .inputMsg{
+         margin-bottom: 28px;
+         label{
+           display: inline-block;
+           width: 70px;
+           line-height: 40px;
+           color: #999;
+           text-align: right;
+         }
+         input{
+           display: inline-block;
+           width: 378px;
+           height: 40px;
+           background-color: #f6f6f6;
+         }
+         span{
+           display: inline-block;
+           color: #bbb;
+           font-size: 12px;
+           margin-top: 8px;
+           margin-left: 75px;
+         }
+         .msgs{
+           width: 378px;
+           height: 90px;
+           background-color: #f6f6f6;
+           border:none;
+         }
+         select{
+           width: 118px;
+           height: 30px;
+           border: #dedede 1px solid;
+           margin-right: 8px;
+           /*background: url("../imgs/jian.jpg") no-repeat right center;*/
+           overflow: hidden;
+         }
+       }
+     }
+   }
+
+
+
+
+    .btns{
+      margin:0 32%;
+      a{
+        display: inline-block;
+        width: 126px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        color: #dedede;
+        font-size: 16px;
+      }
+      .up{
+        background-color: #333;
+      }
+      .down{
+        background-color: #d8251e;
+        margin-left: 20px;
+      }
+    }
+
+  }
+  .dateFoot{
+    width: 100%;
+    line-height: 58px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    background-color: #f6f6f6;
+    box-shadow: 0 1px 5px #ccc;
+  }
+}

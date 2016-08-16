@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>火秀tv艺人自主上传系统</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="webkit|ie-comp|ie-stand" name="renderer">
+    <meta name="robots" content="nofollow">
+    <meta name="keywords"
+          content="51tv，火秀tv，素人，无名艺人，素人艺术家，素人演唱会，素人乐队，素人秀，生活秀，4K，VR，VR直播，全民直播，全景直播，现场实况，演唱会，直播，娱乐，时尚，表演，才艺，生活，音乐，互动">
+    <meta name="description"
+          content="火秀tv - 素人演唱会直播，为素人艺术家实现举办个人演唱会梦想而存在。专业级策划，专业级舞台，专业级幕后，专业级舞美，专业级灯光，专业级音响，专业级舞团。全网超清直播，4K.VR全景直播双路实时放送。100%观众投票决胜负。">
+    <link href="../css/uploadCommon.css" type="text/css" rel="stylesheet"/>
+    <link href="../css/upworks.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="../js/lib/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/uploadCommon.js"></script>
+    <script type="text/javascript" src="jedate/jedate.js"></script>
+    <link type="text/css" rel="stylesheet" href="jedate/skin/jedate.css">
+</head>
+<body>
+<div class="header">
+    <div class="center">
+        <div class="logo"></div>
+        <!--已登录样式-->
+        <div class="userBK login">
+            <div class="face">
+                <img src="../imgs/default.png" alt="头像">
+            </div>
+            <div class="nickname">汪苏泷经纪人</div>
+            <div class="actions">
+                <a href="#exitLogin" class="exitLogin">[退出]</a>
+            </div>
+        </div>
+        <div class="userBK unlogin" style="display: none">
+            <div class="face">
+                <img src="../imgs/default.png" alt="头像">
+            </div>
+            <div class="nickname">汪苏泷经纪人</div>
+            <div class="actions">
+                <a href="#toLogin" class="exitLogin">[登录]</a>
+                <a href="#toRegister" class="exitLogin">[注册]</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="upDate">
+    <ul class="topNav">
+        <li><a href="index.html">首页</a>> </li>
+        <li><a href="upworks.html">上传作品</a></li>
+    </ul>
+    <div class="dateCon">
+        <div class="headNav" style="text-align: center;">上传作品</div>
+        <div class="msg2 msg3">
+            <div class="inputTxt">
+                <label><em>*</em>作品名称</label>
+                <input type="text"/>
+            </div>
+            <div class="inputTxt">
+                <label><em>*</em>歌手</label>
+                <select>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                </select>
+            </div>
+            <div class="inputTxt">
+                <label><em>*</em>专辑</label>
+                <input type="text"/>
+            </div>
+            <div class="inputTxt">
+                <label><em>*</em>发行时间</label>
+                <div class="dateIcon">
+                    <input type="text" id="textymdhms" readonly/>
+                    <i class="icons bg08"></i>
+                </div>
+
+            </div>
+
+            <div class="inputTxt">
+                <label style=" vertical-align: top; padding-top: 10px;"><em>*</em>介绍</label>
+                <textarea class="textareas">100字以内</textarea>
+            </div>
+            <div class="msgg">
+                <div class="labels fl">
+                    <label>
+                        <em>*</em>
+                        作品封面
+                    </label>
+                </div>
+                <div class="noImg fl">
+                    暂无图片
+                </div>
+                <div class="upload fl">
+                    <div>格式为JPG、PNG、JPEG</div>
+                    <div class="upImg">
+                        上传图片
+                        <input type="file"/>
+                    </div>
+                    <p>文件大小不超过500K，图片尺寸1080*1080</p>
+                </div>
+            </div><!--msgg/-->
+            <div class="inputTxt">
+                <label><em>*</em>OST</label>
+                <div class="txts">
+                    <a href="">上传文件</a>
+                    <input type="file"/>
+                </div>
+                <span>大小不超过10MB的MP3</span>
+            </div>
+            <div class="inputTxt">
+                <label><em>*</em>MV</label>
+                <div class="txts">
+                    <a href="">上传文件</a>
+                    <input type="file"/>
+                </div>
+                <span>视频要求：H.264 、 720P、 码流1~2M 、mp4</span>
+            </div>
+        </div>
+        <div class="checks">
+            <input type="checkbox" class="fl"/>
+            <p class="fl">我要上AIBB打榜</p>
+        </div>
+        <div class="btns clear">
+            <a href="index.html" class="up">上一步</a>
+            <a href="myworks.html" class="down">下一步</a>
+        </div>
+    </div>
+    <div class="dateFoot">
+        如有问题，请联系客服QQ：4534534534
+    </div>
+</div>
+<script type="text/javascript">
+    jeDate({
+        dateCell:"#textymdhms",
+        format:"YYYY-MM-DD hh:mm:ss",
+        //isinitVal:true,
+        isTime:true,
+        festival: true, //显示节日
+        minDate:"2015-09-19 00:00:00",
+        maxDate:"2019-09-19 00:00:00"
+    })
+    jeDate({
+        dateCell:"#texthms",
+        format:"hh:mm"
+    });
+</script>
+</body>
+</html>

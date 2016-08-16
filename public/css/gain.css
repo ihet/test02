@@ -1,0 +1,190 @@
+.upDate {
+  width: 900px;
+  height: 100%;
+  margin: 10px auto 0 auto; }
+  .upDate i {
+    margin: 0;
+    padding: 0;
+    margin-left: -4px; }
+  .upDate .topNav {
+    line-height: 45px; }
+    .upDate .topNav li {
+      float: left;
+      color: #999; }
+    .upDate .topNav a {
+      font-size: 14px;
+      color: #999; }
+  .upDate .dateCon {
+    width: 802px;
+    background-color: #fff;
+    padding: 0 49px 34px 49px;
+    clear: both;
+    box-shadow: 0 1px 5px #ccc; }
+    .upDate .dateCon .headNav {
+      width: 100%;
+      line-height: 62px;
+      border-bottom: #dedede 1px solid;
+      margin-bottom: 32px;
+      position: relative; }
+      .upDate .dateCon .headNav .ups {
+        display: inline-block;
+        width: 85px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        color: #fff;
+        background-color: #d8251e;
+        position: absolute;
+        right: 10px;
+        top: 12px; }
+    .upDate .dateCon .introCon {
+      width: 802px;
+      height: 160px;
+      padding-bottom: 35px; }
+      .upDate .dateCon .introCon .introLeft img {
+        width: 160px;
+        height: 160px; }
+      .upDate .dateCon .introCon .introRight {
+        width: 640px; }
+        .upDate .dateCon .introCon .introRight .nameHead {
+          padding-left: 26px;
+          color: #000;
+          font-size: 24px;
+          margin-bottom: 15px;
+          overflow: hidden;
+          zoom: 1; }
+          .upDate .dateCon .introCon .introRight .nameHead a {
+            display: inline-block;
+            width: 80px;
+            height: 30px;
+            border: #dedede 1px solid;
+            background: url("../imgs/passbg.jpg") repeat-x;
+            color: #333;
+            font-size: 12px;
+            line-height: 30px;
+            text-align: center; }
+        .upDate .dateCon .introCon .introRight ul {
+          color: #000;
+          margin-left: 26px; }
+          .upDate .dateCon .introCon .introRight ul li {
+            line-height: 30px; }
+            .upDate .dateCon .introCon .introRight ul li span {
+              color: #bbb;
+              display: inline-block;
+              width: 70px;
+              text-align: left; }
+        .upDate .dateCon .introCon .introRight div li {
+          display: inline-block;
+          width: 180px; }
+    .upDate .dateCon .worksCon {
+      width: 802px;
+      margin-top: 30px; }
+  .upDate .btns {
+    margin: 0 32%; }
+    .upDate .btns a {
+      display: inline-block;
+      width: 126px;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      color: #dedede;
+      font-size: 16px; }
+    .upDate .btns .up {
+      background-color: #333; }
+    .upDate .btns .down {
+      background-color: #d8251e;
+      margin-left: 20px; }
+  .upDate .add {
+    width: 119px;
+    line-height: 38px;
+    margin-top: 30px;
+    padding-bottom: 30px; }
+    .upDate .add button {
+      width: 38px;
+      height: 38px;
+      background: none;
+      border: none;
+      background: url("../imgs/btns.png") no-repeat; }
+    .upDate .add a {
+      width: 80px;
+      height: 36px;
+      line-height: 36px;
+      background: url("../imgs/passbg.jpg") repeat-x;
+      text-align: center;
+      color: #000;
+      border: #dedede 1px solid;
+      border-left: none; }
+
+.dateFoot {
+  width: 100%;
+  line-height: 58px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  background-color: #f6f6f6;
+  box-shadow: 0 1px 5px #ccc; }
+
+.gains table {
+  width: 802px;
+  border-collapse: collapse; }
+  .gains table tr {
+    text-align: center;
+    height: 48px;
+    vertical-align: middle;
+    border-bottom: #dedede 1px solid; }
+  .gains table tr:nth-child(1) {
+    line-height: 40px;
+    background-color: #f6f6f6;
+    border-bottom: none;
+    color: #bbb;
+    font-size: 12px; }
+  .gains table tr:nth-child(1) td:nth-child(1) {
+    color: #bbb;
+    font-size: 12px;
+    font-weight: 300; }
+  .gains table tr td:nth-child(1) {
+    width: 163px;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold; }
+    .gains table tr td:nth-child(1) dl {
+      width: 163px;
+      height: 40px;
+      line-height: 40px;
+      padding-left: 60px; }
+      .gains table tr td:nth-child(1) dl dt, .gains table tr td:nth-child(1) dl dd {
+        float: left; }
+      .gains table tr td:nth-child(1) dl dd {
+        margin-left: 20px; }
+      .gains table tr td:nth-child(1) dl img {
+        display: inline-block;
+        width: 40px;
+        height: 40px; }
+  .gains table tr td:nth-child(2) {
+    width: 163px; }
+  .gains table tr td:nth-child(3) {
+    width: 163px; }
+  .gains table tr td:nth-child(4) {
+    width: 163px; }
+    .gains table tr td:nth-child(4) select {
+      display: inline-block;
+      width: 97px;
+      height: 30px;
+      line-height: 30px;
+      border: #dedede 1px solid;
+      color: #666;
+      font-size: 14px;
+      outline: none; }
+  .gains table tr td:nth-child(5) {
+    width: 163px; }
+    .gains table tr td:nth-child(5) span {
+      display: inline-block;
+      width: 58px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      border: #dedede 1px solid;
+      color: #000;
+      font-size: 1; }
+
+/*# sourceMappingURL=gain.css.map */

@@ -1,0 +1,104 @@
+.upDate {
+  width: 900px;
+  height: 100%;
+  margin: 10px auto 0 auto; }
+  .upDate .topNav {
+    line-height: 45px; }
+    .upDate .topNav li {
+      float: left;
+      color: #999; }
+    .upDate .topNav a {
+      font-size: 14px;
+      color: #999; }
+  .upDate .dateCon {
+    width: 802px;
+    background-color: #fff;
+    padding: 0 49px 34px 49px;
+    clear: both;
+    box-shadow: 0 1px 5px #ccc; }
+    .upDate .dateCon .headNav {
+      width: 100%;
+      line-height: 62px;
+      border-bottom: #dedede 1px solid;
+      margin-bottom: 32px;
+      position: relative; }
+      .upDate .dateCon .headNav .ups {
+        display: inline-block;
+        width: 85px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        color: #fff;
+        background-color: #d8251e;
+        position: absolute;
+        right: 10px;
+        top: 12px; }
+    .upDate .dateCon .myups {
+      height: 96px;
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+      border-bottom: #efefef 1px solid; }
+      .upDate .dateCon .myups .workImg {
+        width: 96px;
+        height: 96px; }
+      .upDate .dateCon .myups .texts {
+        width: 480px;
+        margin: 0 20px; }
+        .upDate .dateCon .myups .texts .songName {
+          color: #000;
+          font-size: 18px;
+          margin-right: 5px; }
+        .upDate .dateCon .myups .texts a {
+          margin-left: 3px;
+          color: #999; }
+        .upDate .dateCon .myups .texts .peoName {
+          color: #999;
+          line-height: 45px; }
+      .upDate .dateCon .myups .times {
+        width: 185px;
+        text-align: right; }
+        .upDate .dateCon .myups .times .shen01 {
+          color: #000;
+          font-size: 18px;
+          margin-bottom: 54px; }
+        .upDate .dateCon .myups .times .shen02 {
+          color: #999;
+          font-size: 18px;
+          margin-bottom: 54px; }
+        .upDate .dateCon .myups .times .shen03 {
+          color: #d8251e;
+          font-size: 18px; }
+        .upDate .dateCon .myups .times .fei {
+          color: #000;
+          font-size: 14px;
+          margin: 10px 0 28px 0; }
+        .upDate .dateCon .myups .times .upTime {
+          color: #bbb;
+          font-size: 12px; }
+    .upDate .dateCon .myups:last-child {
+      border-bottom: none; }
+    .upDate .dateCon .btns {
+      margin: 0 32%; }
+      .upDate .dateCon .btns a {
+        display: inline-block;
+        width: 126px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        color: #dedede;
+        font-size: 16px; }
+      .upDate .dateCon .btns .up {
+        background-color: #333; }
+      .upDate .dateCon .btns .down {
+        background-color: #d8251e;
+        margin-left: 20px; }
+  .upDate .dateFoot {
+    width: 100%;
+    line-height: 58px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    background-color: #f6f6f6;
+    box-shadow: 0 1px 5px #ccc; }
+
+/*# sourceMappingURL=myworks.css.map */

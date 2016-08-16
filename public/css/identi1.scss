@@ -1,0 +1,86 @@
+.upDate{
+  width: 900px;
+  height: 100%;
+  margin: 5% auto 0 auto;
+  .topNav{
+    line-height: 40px;
+    li{
+      float: left;
+      color: #999;
+    }
+    a{
+      font-size: 14px;
+      color: #999;
+    }
+  }
+
+  .dateCon{
+    width: 802px;
+    background-color: #fff;
+    padding: 34px 49px;
+    clear: both;
+    box-shadow:0 1px 5px #ccc;
+    .title{
+      color: #000;
+      font-size: 18px;
+      text-align: center;
+      font-weight:bold;
+      margin-bottom: 38px;
+    }
+    p{
+      color: #666;
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 36px;
+    }
+    .checks{
+      height: 30px;
+      line-height: 30px;
+      p{
+        float: left;
+        color: #000;
+        font-size: 14px;
+      }
+      input{
+        float: left;
+        vertical-align: middle;
+        margin-top: 5px;
+        width: 16px;
+        height: 16px;
+        background-color: #efefef;
+        border: #dedede 1px solid;
+        margin-right: 9px;
+        border-radius:0px;
+      }
+    }
+    .btns{
+      margin:0 32%;
+      a{
+        display: inline-block;
+        width: 126px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        color: #dedede;
+        font-size: 16px;
+      }
+      .up{
+        background-color: #333;
+      }
+      .down{
+        background-color: #d8251e;
+        margin-left: 20px;
+      }
+    }
+
+  }
+  .dateFoot{
+    width: 100%;
+    line-height: 58px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    background-color: #f6f6f6;
+    box-shadow: 0 1px 5px #ccc;
+  }
+}

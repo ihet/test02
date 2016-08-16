@@ -1,0 +1,33 @@
+.upDate {
+  width: 900px;
+  height: 100%;
+  margin: 0 auto 0 auto; }
+  .upDate .topNav {
+    line-height: 40px;
+    margin-top: 164px; }
+    .upDate .topNav li {
+      float: left;
+      color: #999; }
+    .upDate .topNav a {
+      font-size: 14px;
+      color: #999; }
+  .upDate .dateCon {
+    width: 802px;
+    background-color: #fff;
+    padding: 0 49px 34px 49px;
+    clear: both;
+    box-shadow: 0 1px 5px #ccc;
+    text-align: center;
+    line-height: 445px;
+    color: #333;
+    font-size: 48px; }
+  .upDate .dateFoot {
+    width: 100%;
+    line-height: 58px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    background-color: #f6f6f6;
+    box-shadow: 0 1px 5px #ccc; }
+
+/*# sourceMappingURL=identi5.css.map */
